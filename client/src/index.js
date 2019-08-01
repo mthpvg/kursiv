@@ -1,3 +1,5 @@
+const SERVER = 'http://192.168.1.13:3000'
+
 console.log(`[APP] running in ${process.env.NODE_ENV} mode.`)
 if (process.env.NODE_ENV === 'production') {
   if ('serviceWorker' in navigator) {
@@ -14,3 +16,10 @@ if (process.env.NODE_ENV === 'production') {
     console.log('No serviceWorker in navigator, are you on localhost?')
   }
 }
+
+
+fetch(`${SERVER}/data`)
+  .then((response) => response.json())
+  .then((myJson) => {
+    console.log(myJson)
+  })
