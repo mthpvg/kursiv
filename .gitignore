@@ -1,0 +1,13 @@
+node_modules
+.env
+
+dist
+.cache
+build
+
+coverage
+jest_*
+
+.vscode
+
+.DS_Store
