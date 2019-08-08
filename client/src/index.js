@@ -1,4 +1,5 @@
 const SERVER = 'http://192.168.1.13:3000'
+const page = require('page')
 
 console.log(`[APP] running in ${process.env.NODE_ENV} mode.`)
 if (process.env.NODE_ENV === 'production') {
@@ -23,3 +24,22 @@ fetch(`${SERVER}/data`)
   .then((myJson) => {
     console.log(myJson)
   })
+
+page('/', index)
+page('/sign-in', signIn)
+page('/login', login)
+page('/logout', logout)
+page()
+
+function index() {
+  console.log('index')
+}
+function signIn() {
+  console.log('signIn')
+}
+function login() {
+  console.log('login')
+}
+function logout() {
+  console.log('logout')
+}
