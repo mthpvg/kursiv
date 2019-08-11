@@ -43,3 +43,16 @@ function login() {
 function logout() {
   console.log('logout')
 }
+
+document.getElementById('sign-in-form').onsubmit = function(event) {
+  const email = document.getElementById('email').value
+  const password = document.getElementById('password').value
+  const body = JSON.stringify({email, password})
+
+  fetch(`${SERVER}/sign-in`, {method: 'POST', body})
+  .then((response) => response.json())
+  .then((myJson) => {
+    console.log(myJson)
+  })
+  return false
+}

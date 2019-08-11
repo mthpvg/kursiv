@@ -21,3 +21,11 @@
 
 ## Future
 - Local Postgres
+
+
+## References
+
+### Without Express
+- Handling body of a POST request: https://itnext.io/how-to-handle-the-post-request-body-in-node-js-without-using-a-framework-cd2038b93190
+
+- Enable CORS: https://bigcodenerd.org/enable-cors-node-js-without-express/
