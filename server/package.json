@@ -9,10 +9,14 @@
   "author": "mthpvg",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "lowdb": "^1.0.0",
-    "page": "^1.11.4"
+    "page": "^1.11.6"
+  },
+  "engines": {    
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }
